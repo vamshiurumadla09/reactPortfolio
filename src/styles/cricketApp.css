@@ -1,0 +1,17 @@
+.ball {
+    border: 1px solid;
+    width: 30%;
+    padding: 20px 0;
+}
+
+.runs {
+    width: 30%;
+    margin-top: 20px;
+}
+.runs .run{
+    border: 1px solid;
+    background-color: green;
+    color: antiquewhite;
+    padding: 20px;
+    box-shadow: 2px 2px 1px 0 black
+}

@@ -1,0 +1,56 @@
+
+.ul {
+    list-style: none;
+}
+
+.li {
+    border: 1px solid;
+    height: 50px;
+    margin: 10px;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: antiquewhite;
+    text-transform: capitalize;
+    font-size: x-large;
+    font-family: cursive;
+}
+
+.delete-btn {
+    text-transform: capitalize;
+    background: crimson;
+    color: antiquewhite;
+    padding: 5px 10px;
+    border: 1px solid;
+    border-radius: 8px;
+}
+
+.delete-all-btn {
+    text-transform: capitalize;
+    background: crimson;
+    color: antiquewhite;
+    padding: 5px 10px;
+    border: 1px solid;
+    border-radius: 8px;
+    position: absolute;
+    right: 1rem;
+}
+
+.add-todo {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.input-todo {
+    width: 25%;
+}
+
+.add-btn {
+    text-transform: capitalize;
+    background: green;
+    color: antiquewhite;
+    padding: 5px 16px;
+    border: 1px solid;
+}

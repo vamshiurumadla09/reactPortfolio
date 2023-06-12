@@ -1,0 +1,20 @@
+#resume{
+    background-color: #fff4f0;
+}
+
+.education{
+    padding: 4rem 0;
+}
+
+ .context{
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.education .education-details ul{
+    margin-bottom: 2rem;
+}
+.education .education-details ul h3{
+    text-transform: capitalize;
+    margin: 10px 0;
+}

@@ -1,0 +1,71 @@
+#contact{
+    padding-top: 2rem;
+}
+.contact-bg{
+    position: relative;
+    background-color: black;
+    opacity: 0.96;
+}
+
+.contact-bg img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+.contact-body{
+    padding: 3rem;
+}
+.contact-details{
+    color: aliceblue;
+}
+.contact-form{
+    width: 65%;
+    margin: auto;
+}
+
+.form{
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+.form div label{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.form div label::after{
+    content: ' :';
+}
+
+.detail a{
+    color: aliceblue;
+}
+
+.detail{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.detail h4 span{
+    margin-right: 20px;
+}
+
+.details{
+    margin: 20px;
+}
+
+.full-details{
+    padding: 20px;
+    margin: 20px;
+}

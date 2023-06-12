@@ -1,0 +1,54 @@
+#footer {
+    position: relative;
+    padding: 1rem;
+    background-color: rgb(255, 255, 255);
+}
+
+.f-social-icons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.f-social-icons .icon .link {
+    color: #00315c;
+    font-size: 35px;
+    margin: 10px;
+}
+
+.back-to-top-broder{
+    height: 60px;
+    width: 60px;
+    border: 2px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.back-to-top-broder:hover a{
+    color: #ffffff;
+    transition: 0.7s;
+}
+.back-to-top-broder:hover{
+    background-color: #00315c;
+    transition: 1s;
+}
+.back-to-top {
+    color: #00315c;
+    font-size: 35px;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.f-description{
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+}
