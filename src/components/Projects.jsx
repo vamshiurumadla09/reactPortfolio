@@ -8,7 +8,7 @@ function Projects(store) {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: 1,
     slidesToScroll: 1
 };
   return (
@@ -22,8 +22,8 @@ function Projects(store) {
                 {
                     store.projects.map((project) => {
                         return (
-                            <div>
-                                <div className='projects'>
+                            <div className='row'>
+                                <div className='col-lg-6 col-sm-10 col-xs-10 m-auto projects'>
                                     <a href={project.link}>
                                         <div className='card project'>
                                             <img className='card-img-top w-100' src={project.image} alt="" />
