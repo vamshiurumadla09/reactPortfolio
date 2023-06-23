@@ -1,7 +1,7 @@
 const initialState = {
     frontend: [{
             name: 'HTML5',
-            percentage: '90'
+            percentage: '70'
         },
         {
             name: 'CSS3',

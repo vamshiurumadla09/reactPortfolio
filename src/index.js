@@ -9,11 +9,7 @@ import {
     Routes,
     Route
 } from "react-router-dom"
-import CricketApp from './components/CricketApp';
-import TodoBasic from './components/TodoBasic';
-import ProjectDetails from './components/ProjectDetails';
-import TodoAdvance from './components/TodoAdvance';
-import EHomePage from './components/eCommerceProject/eHomePage';
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -21,12 +17,6 @@ root.render(
     <BrowserRouter>
          <Routes>
             <Route path='/' element={<App/>}>
-             </Route>
-             <Route path='projectdetails' element={<ProjectDetails/>}>
-                <Route path='cricket' element={<CricketApp/>}/>
-                <Route path='todobasic' element={<TodoBasic/>}/>
-                <Route path='todoadvance' element={<TodoAdvance/>}/>
-                <Route path='e-commerce' element={<EHomePage/>}/>
              </Route>
         </Routes>
     </BrowserRouter>

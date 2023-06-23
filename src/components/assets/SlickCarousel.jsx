@@ -1,26 +1,21 @@
 import { React, useState } from 'react';
 import Slider from 'react-slick';
 import { connect } from 'react-redux';
-import '../styles/projects.css';
+import '../../styles/projects.css'
 
-function Projects(store) {
-  const [projects, setProjects] = useState([...store.projects]);
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 1
-};
-  console.log(projects)
-  return (
-    <div id='projects'>
-      <div className='container'>
-        <div className='row project-section'>
-          <h2>check some of my works</h2>
-        </div>
-        <div className='all-projects' >
-        <Slider {...settings}>
+function SlickCarousel(store) {
+    const [projects, setProjects] = useState([...store.projects]);
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 3,
+        slidesToScroll: 1
+    };
+    return (
+        <div>
+            <h2>Slick Carousel Example</h2>
+            <Slider {...settings}>
                 {
                     projects.map((project) => {
                         return (
@@ -44,9 +39,7 @@ function Projects(store) {
                 }
             </Slider>
         </div>
-      </div>
-    </div>
-  )
+    )
 }
 
-export default connect((store) => { return store })(Projects);
+export default connect((store) => { return store })(SlickCarousel);
