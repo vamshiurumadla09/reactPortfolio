@@ -1,4 +1,4 @@
-import { React, useState } from 'react'
+import { React } from 'react'
 import '../styles/footer.css'
 import { connect } from 'react-redux'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -12,7 +12,7 @@ function Footer(store) {
           <div className='col-lg-3'>
           <ul className='f-social-icons'>
             <li className='icon'>
-              <a className='link' href="">
+              <a className='link' href="#header">
                 <FontAwesomeIcon icon={faInstagram} />
               </a>
             </li>
@@ -22,7 +22,7 @@ function Footer(store) {
               </a>
             </li>
             <li className='icon'>
-              <a className='link' href="">
+              <a className='link' href="https://github.com/vamshiurumadla09">
                 <FontAwesomeIcon icon={faGithub} />
               </a>
             </li>

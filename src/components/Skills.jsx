@@ -1,13 +1,9 @@
-import { React, useState } from 'react';
+import { React} from 'react';
 import '../styles/skills.css';
 import { connect } from 'react-redux';
 
 function Skills(store) {
-    console.log(store)
-    const [frontend, setFrontend] = useState([...store.skills.frontend]);
-    const [backend, setBackend] = useState([...store.skills.backend]);
-    const [sfcc, setSfcc] = useState([...store.skills.sfcc]);
-    console.log(frontend);
+
     return (
         <div id="skills">
             <div className='container'>
@@ -31,7 +27,7 @@ function Skills(store) {
                                         <div class="accordion-body">
                                             <ul>
                                                 {
-                                                    frontend.map((skill) => {
+                                                    store.skills.frontend.map((skill) => {
                                                         return (
                                                             <li className='skill-scale'>
                                                                 <div className='row'>
@@ -65,7 +61,7 @@ function Skills(store) {
                                         <div class="accordion-body">
                                             <ul>
                                                 {
-                                                    backend.map((skill) => {
+                                                    store.skills.backend.map((skill) => {
                                                         return (
                                                             <li className='skill-scale'>
                                                                 <div className='row'>
@@ -104,7 +100,7 @@ function Skills(store) {
                                         <div class="accordion-body">
                                             <ul>
                                                 {
-                                                    sfcc.map((skill) => {
+                                                    store.skills.sfcc.map((skill) => {
                                                         return (
                                                             <li className='skill-scale'>
                                                                 <div className='row'>

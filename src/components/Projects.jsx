@@ -1,10 +1,9 @@
-import { React, useState } from 'react';
+import { React} from 'react';
 import Slider from 'react-slick';
 import { connect } from 'react-redux';
 import '../styles/projects.css';
 
 function Projects(store) {
-  const [projects, setProjects] = useState([...store.projects]);
   const settings = {
     dots: true,
     infinite: true,
@@ -12,7 +11,6 @@ function Projects(store) {
     slidesToShow: 3,
     slidesToScroll: 1
 };
-  console.log(projects)
   return (
     <div id='projects'>
       <div className='container'>
@@ -22,7 +20,7 @@ function Projects(store) {
         <div className='all-projects' >
         <Slider {...settings}>
                 {
-                    projects.map((project) => {
+                    store.projects.map((project) => {
                         return (
                             <div>
                                 <div className='projects'>

@@ -1,4 +1,4 @@
-import { React, useState, useEffect } from 'react';
+import { React} from 'react';
 import { connect } from 'react-redux';
 import "../styles/header.css";
 import backgroundImage from '../portfolioImages/header-background-image.jpg';
@@ -7,22 +7,6 @@ import { faInstagram, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-
 
 
 function MainHeader(store) {
-  console.log(store)
-  const [megaMenu, setMegaMenu] = useState([...store.header.megaMenu]);
-
-  const [pointer, setPointer] = useState('');
-
-  function activateNavbar(){
-    var p = window.pageYOffset;
-    console.log(p)
-  }
-
-   const changeBgColor = ()=>{
-    var offset = window.scrollY;
-    console.log(offset);
-   }
-
-  //  window.addEventListener('scroll', activateNavbar);
 
   return (
     <div id="header">
@@ -33,7 +17,7 @@ function MainHeader(store) {
           <li className='nav-item menu'>
                   <a className='menu-a-tag' href='#header'>home</a>
                 </li>
-            {megaMenu.map((menu) => {
+            {store.header.megaMenu.map((menu) => {
               return (
                 <li className='nav-item menu'>
                   <a className='menu-a-tag' href={`#${menu}`}>{menu}</a>
@@ -51,7 +35,7 @@ function MainHeader(store) {
         <p className='summary'>{store.header.summary}</p>
         <ul className='social-icons'>
           <li className='icon'>
-            <a className='link' href="">
+            <a className='link' href="#header">
               <FontAwesomeIcon icon={faInstagram} />
             </a>
           </li>
@@ -61,7 +45,7 @@ function MainHeader(store) {
             </a>
           </li>
           <li className='icon'>
-            <a className='link' href="">
+            <a className='link' href="https://github.com/vamshiurumadla09">
               <FontAwesomeIcon icon={faGithub} />
             </a>
           </li>

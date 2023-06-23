@@ -34,7 +34,7 @@ function Contact() {
                           <span><FontAwesomeIcon icon={faEnvelope} /></span>
                           <span>email</span>
                         </h4>
-                        <a href=''>urumadlavamshi09@gmail.com</a>
+                        <span>urumadlavamshi09@gmail.com</span>
                       </div>
                     </li>
                     <li className='details'>
