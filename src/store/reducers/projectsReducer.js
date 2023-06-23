@@ -1,6 +1,6 @@
 import ecommerce from '../../portfolioImages/ecommerce.jpeg';
-import todoAdvance from '../../portfolioImages/todoadvance.png';
-import todoBasic from '../../portfolioImages/todobasic.png';
+import todoAdvance from '../../portfolioImages/todoAdvance.png';
+import todoBasic from '../../portfolioImages/todoBasic.png';
 
 const initialState = [
         {
