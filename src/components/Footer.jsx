@@ -28,17 +28,19 @@ function Footer(store) {
             </li>
           </ul>
           </div>
-          <div className='col-lg-3 f-description'>
+          <div className='col-lg-6 f-d-b'>
+          <div className='f-description'>
             <div>
             <h4>thanks for visting my site</h4>
             </div>
           </div>
-          <div className='col-lg-3 center'>
+          <div className='center'>
           <div className='back-to-top-broder'>
               <a className='back-to-top' href="#header">
                 <FontAwesomeIcon icon={faArrowUp} />
               </a>
             </div>
+          </div>
           </div>
         </div>
       </div>

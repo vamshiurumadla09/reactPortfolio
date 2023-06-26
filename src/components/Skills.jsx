@@ -4,6 +4,16 @@ import { connect } from 'react-redux';
 
 function Skills(store) {
 
+    const resumeUrl = 'http://localhost:3000/Vamshi_Urumadla_Resume.docx';
+    function downloadResume(resumeUrl){
+        const fileName = resumeUrl.split("/").pop();
+        const aTag = document.createElement("a");
+        aTag.href = resumeUrl;
+        aTag.setAttribute("download", fileName);
+        document.body.appendChild(aTag);
+        aTag.click();
+        aTag.remove();
+    }
     return (
         <div id="skills">
             <div className='container'>
@@ -126,7 +136,9 @@ function Skills(store) {
                             <div className='col-lg-10 skill'>
                                 <div className='resume-download'>
                                     <span>downlad the resume</span>
-                                    <button class="btn btn-success">Download</button>
+                                    <button class="btn btn-success" onClick={()=>{
+                                        downloadResume(resumeUrl)
+                                    }}>Download</button>
                                 </div>
                             </div>
                         </div>

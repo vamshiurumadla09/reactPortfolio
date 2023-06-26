@@ -8,7 +8,7 @@ function Projects(store) {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 1,
+    slidesToShow: 3,
     slidesToScroll: 1
 };
   return (
@@ -18,12 +18,12 @@ function Projects(store) {
           <h2>check some of my works</h2>
         </div>
         <div className='all-projects' >
-        <Slider {...settings}>
+        <Slider {...settings} className='d-none d-lg-block d-md-block'>
                 {
                     store.projects.map((project) => {
                         return (
                             <div className='row'>
-                                <div className='col-lg-6 col-sm-10 col-xs-10 m-auto projects'>
+                                <div className='projects'>
                                     <a href={project.link}>
                                         <div className='card project'>
                                             <img className='card-img-top w-100' src={project.image} alt="" />
@@ -41,6 +41,29 @@ function Projects(store) {
                     })
                 }
             </Slider>
+            <div className='d-sm-none'>
+            {
+                    store.projects.map((project) => {
+                        return (
+                            <div className='row'>
+                                <div className='projects'>
+                                    <a href={project.link}>
+                                        <div className='card project'>
+                                            <img className='card-img-top w-100' src={project.image} alt="" />
+                                            <div className='card-body project-body'>
+                                                <h2 className='card-title'>{project.title}</h2>
+                                                <p className='card-text'>{project.description}</p>
+                                                <a href={project.link}>show</a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                        )
+                    })
+                }
+            </div>
         </div>
       </div>
     </div>

@@ -52,3 +52,8 @@
     align-items: center;
     text-transform: capitalize;
 }
+
+.f-d-b{
+    display: flex;
+    justify-content: space-evenly;
+}

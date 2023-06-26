@@ -84,3 +84,10 @@ background-color: #4e1d7e;
 .resume-download button{
     margin: 10px;
 }
+
+@media only screen and (max-width: 600px) {
+    .skill {
+        margin: 10px 0;
+        padding: 0 30px;
+    }
+}

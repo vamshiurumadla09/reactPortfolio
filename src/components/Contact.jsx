@@ -19,30 +19,37 @@ function Contact() {
                   <ul className='full-details'>
                     <li className='details'>
                       <div className='detail'>
-                        <h4>
-                          <span>
+                        <div>
+                        <span>
                           <FontAwesomeIcon icon={faPhone} />
                           </span>
                           <span>call</span>
-                        </h4>
+                        </div>
+                        <div>
                         <span>9963186819</span>
+                        </div>
                       </div>
                     </li>
                     <li className='details'>
                       <div className='detail'>
-                        <h4>
-                          <span><FontAwesomeIcon icon={faEnvelope} /></span>
+                        <div>
+                        <span><FontAwesomeIcon icon={faEnvelope} /></span>
                           <span>email</span>
-                        </h4>
+                        </div>
+                        <div>
                         <span>urumadlavamshi09@gmail.com</span>
+                        </div>
                       </div>
                     </li>
                     <li className='details'>
                       <div className='detail'>
-                        <h4>
-                          <span><FontAwesomeIcon icon={faLinkedin} /></span>
-                          <span>linked</span></h4>
+                        <div>
+                        <span><FontAwesomeIcon icon={faLinkedin} /></span>
+                          <span>linked</span>
+                        </div>
+                        <div>
                         <a href='https://www.linkedin.com/in/vamshi-urumadla-ui-developer/'>vamshiurumadla</a>
+                        </div>
                       </div>
                     </li>
                   </ul>
