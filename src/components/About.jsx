@@ -1,5 +1,5 @@
 import React from 'react';
-import profilePic from '../portfolioImages/profile-pic.png';
+import profilePic from '../portfolioImages/vamshi.jpg';
 import "../styles/about.css"
 
 function About() {
