@@ -7,6 +7,12 @@ const initialState = {
             name: 'CSS3',
             percentage: '80'
         },
+
+        {
+            name: 'SASS',
+            percentage: '80'
+        },
+
         {
             name: 'Javascript',
             percentage: '85'
@@ -21,7 +27,7 @@ const initialState = {
         },
         {
             name: 'Bootstrap',
-            percentage: '70'
+            percentage: '80'
         },
     ],
     backend: [{
@@ -35,10 +41,6 @@ const initialState = {
     ],
     sfcc: [{
             name: 'isml',
-            percentage: '90'
-        },
-        {
-            name: 'scss',
             percentage: '90'
         },
         {

@@ -1,9 +1,7 @@
 const initialState = {
         megaMenu : ['about', 'skills', 'projects', 'contact'],
         name:'vamshi urumadla',
-        summary:`Salesforce Certified commerce cloud developer with over 1 year of experience in developing and customizing eCommerce solutions.
-        Proficient in Salesforce Commerce Cloud. Worked on designing and developing responsive and user-friendly storefronts using SFRA (Storefront Reference Architecture).
-        Developed multiple components for different pages using page designer and skilled in analyzing requirements, designing, developing, and maintaining web applications. For development, utilized Agile-Scrum methodology.`
+        summary:`passionate about leveraging my expertise in Frontend to create innovative and engaging e-commerce experiences. As a seasoned Frontend Developer with 1 year+ of hands-on experience, I am seeking opportunities to contribute my skills in JavaScript, React.js, Bootstrap, Sass, jQuery, HTML, and CSS to dynamic and innovative projects. I am passionate about crafting visually appealing and user-centric web applications to enhance the digital experience.`
 }
 
 function header(state=initialState){
