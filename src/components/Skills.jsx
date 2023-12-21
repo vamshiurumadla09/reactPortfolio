@@ -133,7 +133,7 @@ function Skills(store) {
                                     </div>
                                 </div>
                             </div>
-                            <div className='col-lg-10 skill'>
+                            <div className='col-lg-10 skill d-none'>
                                 <div className='resume-download'>
                                     <span>downlad the resume</span>
                                     <button class="btn btn-success" onClick={()=>{

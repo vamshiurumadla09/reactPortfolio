@@ -14,7 +14,7 @@ function Contact() {
           <div className='row contact-body'>
             <div className='col-lg-6'>
               <div className='contact-details'>
-                <h2>Contact us</h2>
+                <h2>Contact me</h2>
                 <div>
                   <ul className='full-details'>
                     <li className='details'>
@@ -56,7 +56,7 @@ function Contact() {
                 </div>
               </div>
             </div>
-            <div className='col-lg-6'>
+            {/* <div className='col-lg-6'>
               <div className='card contact-form'>
                 <div className='card-body'>
                   <form className='form' action="">
@@ -80,7 +80,7 @@ function Contact() {
                   </form>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

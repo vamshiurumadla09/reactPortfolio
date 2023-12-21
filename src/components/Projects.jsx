@@ -13,7 +13,7 @@ function Projects(store) {
 };
   return (
     <div id='projects'>
-      <div className='container'>
+      <div className=''>
         <div className='row project-section'>
           <h2>check some of my works</h2>
         </div>
